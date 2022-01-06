@@ -28,12 +28,16 @@ section{
     width:40%;
     padding-top:100px;
 }
+.line-boss{
+    display:flex;
+    align-items: center;
+}
 .left-content .line{
-    width:6px;
-    height:150px;
+    width:5px;
+    height:130px;
     background:#ff4756;
     border-radius: 20px;
-    float: left;
+    margin-right:10px;
 }
 .left-content h1{
     font-size: 60px;
@@ -52,37 +56,54 @@ section{
 .colored-title{
     color:#ff4756;
 }
-a.button{
+.button{
     text-decoration: none;
     padding:10px 30px;
     background:#ff8b48;
+    outline: none;
+    border:none;
     font-size:20px;
     color:#fff;
     border-radius:5px;
     font-family: 'Poppins';
+    cursor: pointer;
 }
 .right-content{
     display: flex;
     justify-content: flex-end;
+    margin-top: -100px;
 }
 .right-content img{
     width:80%;
     
 }
-
+/* mission-section */
+.mission-section{
+    background-image:url(images/shapes/shape-8.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position:1250px 50px;
+}
 .mission-section h1{
     text-align: center;
     font-size: 50px;
     font-family:'Bebas Neue';
     word-spacing: 10px;
     margin-bottom:40px;
+    color:#333;
 }
 .all-missions .mission-item{
     width:30%;
     padding:20px;
-    border-radius:10px;
-    background-color:#8ac6ff6c;
+    border-radius:20px;
+    background-color:#abff8a41;
     
+}
+.mission-item:nth-child(2){
+    background-color: #ff88923d;
+}
+.mission-item:nth-child(3){
+    background-color: #fdff6e49;
 }
 .mission-item img{
     width:150px;
@@ -99,7 +120,10 @@ a.button{
     padding:20px 0;
     font-family: 'Poppins', sans-serif;
 }
-
+/* development  section*/
+.community{
+    padding-bottom: 0px;
+}
 .development img,
 .community img{
     width:100%;
@@ -108,6 +132,18 @@ a.button{
 .c-container{
     display:flex;
     align-items: center;
+}
+.development{
+    background-image:url(images/shapes/shape-6.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position:20px 20px;
+}
+.community{
+    background-image:url(images/shapes/shape-7.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position:850px 10px;
 }
 .development .left-section,
 .community .right-section{
@@ -129,9 +165,10 @@ a.button{
 }
 .right-section p,
 .left-section p{
-    padding:30px 0;
+    padding:20px 0;
     font-family: 'Poppins';
     color:#666;
+    font-size: 18px;
 }
 footer{
     height: 150px;
@@ -153,4 +190,35 @@ footer p{
     font-family: 'Poppins';
     padding:5px 0;
     color:#666;
+}
+
+.contact .left-content img{
+    width:80%;
+}
+.contact{
+    margin-top:-100px;
+}
+.contact h1{
+    font-family: 'Bebas Neue';
+    text-align: center;
+    font-size: 50px;
+    word-spacing: 10px;
+    color:#333;
+}
+.contact .right-content{
+    justify-content: flex-start;
+    
+}
+.right-content input,
+.right-content textarea{
+    border: none;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    margin:15px 0;
+    outline:none;
+    width:300px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding:5px;
+    resize: none;
+
 }
