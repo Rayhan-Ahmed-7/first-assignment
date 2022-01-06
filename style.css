@@ -8,7 +8,7 @@ body{
 }
 section{
     height:600px;
-    margin: auto;
+    padding-bottom:150px;
 }
 
 .flexible-container{
@@ -16,14 +16,15 @@ section{
     justify-content: space-between;
     align-items: center;
 }
-.container{
-    width:90%;
+.container,
+.all-missions{
+    width:80%;
     margin:0 auto;
 }
 .left-content,
 .right-content{
     width:40%;
-    margin:5% 5%;
+    padding-top:100px;
 }
 .left-content h1{
     font-size: 60px;
@@ -32,6 +33,7 @@ section{
     padding-left:10px;
     border-left:5px solid #ff4756;
     border-radius: 20px;
+    word-spacing: 5px;
 }
 .left-content p{
     color:#555;
@@ -39,7 +41,7 @@ section{
     font-family:'Poppins', sans-serif;;
     padding:30px 0;
 }
-.left-content .colored-title{
+.colored-title{
     color:#ff4756;
 }
 .left-content a.button{
@@ -57,4 +59,33 @@ section{
 .right-content img{
     width:70%;
     
+}
+
+.mission-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-family:'Bebas Neue';
+    word-spacing: 10px;
+    margin-bottom:40px;
+}
+.all-missions .mission-item{
+    width:30%;
+    padding:20px;
+    border-radius:10px;
+    background-color:#ffb1b84f;
+    
+}
+.mission-item img{
+    width:150px;
+}
+.mission-item h2{
+    font-family: 'Poppins';
+    font-weight:700;
+    margin:5px 0;
+}
+.mission-item p{
+    color:#555;
+    font-size:18px;
+    padding:20px 0;
+    font-family: 'Poppins', sans-serif;
 }
